@@ -1,0 +1,21 @@
+// 基本样式
+@tailwind base;
+// 封装样式
+@tailwind components;
+@layer components {
+  .baseFont {
+    @apply border-0 font-[inherit] text-base font-normal not-italic
+  }
+  .navLast {
+    @apply flex-row justify-center ml-4 w-[90px] h-[34px] rounded-lg bg-pink-500 space-x-2
+  }
+  .none-border {
+    outline: none
+  }
+  .wrap {
+    @apply px-[140px]
+  }
+  
+
+}
+@tailwind utilities;
